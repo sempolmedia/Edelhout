@@ -12,7 +12,6 @@
 </head>
 <body>
 
-  <!-- NAV -->
   <nav class="nav nav--solid">
     <a href="index.html" class="nav-logo">Edelhout</a>
     <ul class="nav-links">
@@ -22,7 +21,7 @@
       <li><a href="diensten.html">Diensten</a></li>
       <li><a href="contact.html" class="nav-cta active">Contact</a></li>
     </ul>
-    <button class="nav-hamburger" aria-label="Menu openen">
+    <button class="nav-hamburger" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
   </nav>
@@ -34,87 +33,79 @@
     <a href="contact.html" class="active">Contact</a>
   </nav>
 
-  <!-- PAGE HERO -->
   <section class="page-hero">
     <div class="container">
-      <span class="section-label" style="color:var(--gold);">Kom in contact</span>
+      <span class="eyebrow">Kom in contact</span>
       <h1>Laten we kennismaken</h1>
-      <div class="gold-divider"></div>
-      <p class="lead" style="color:rgba(255,255,255,0.6); margin:0 auto;">
+      <p class="intro-text" style="color:rgba(255,255,255,0.45); margin-top:20px;">
         Heeft u een idee, een vraag of wilt u gewoon weten wat er mogelijk is? Kick staat klaar voor een goed gesprek. Geen verplichtingen, wel eerlijk advies.
       </p>
     </div>
   </section>
 
-  <!-- CONTACT SECTION -->
   <section class="section section--cream">
     <div class="container">
-      <div class="contact-grid">
+      <div class="contact-layout">
 
         <!-- FORM -->
         <div class="fade-in">
-          <span class="section-label">Stuur een bericht</span>
+          <span class="eyebrow">Stuur een bericht</span>
           <h2 style="margin-bottom:8px;">Vertel ons over uw project</h2>
-          <div class="gold-divider gold-divider--left"></div>
-          <p style="margin-bottom:36px; max-width:480px;">
-            Vul het formulier in en Kick neemt doorgaans binnen één werkdag contact met u op.
-            Liever bellen? Dat mag ook — direct en zonder wachtrij.
+          <div style="height:1px; background:rgba(201,168,76,0.3); margin:20px 0 32px; width:48px;"></div>
+          <p style="margin-bottom:40px; max-width:480px;">
+            Vul het formulier in en Kick neemt doorgaans binnen één werkdag contact met u op. Liever bellen? Dat mag ook, direct en zonder wachtrij.
           </p>
 
-          <form class="contact-form contact-form-el" novalidate>
+          <form class="contact-form-wrap contact-form-el" novalidate>
             <div class="form-row">
               <div class="form-group">
-                <label for="naam">Naam *</label>
+                <label for="naam">Naam</label>
                 <input type="text" id="naam" name="naam" placeholder="Uw volledige naam" required />
               </div>
               <div class="form-group">
-                <label for="email">E-mailadres *</label>
+                <label for="email">E-mailadres</label>
                 <input type="email" id="email" name="email" placeholder="uw@email.nl" required />
               </div>
             </div>
-
             <div class="form-row">
               <div class="form-group">
                 <label for="telefoon">Telefoonnummer</label>
                 <input type="tel" id="telefoon" name="telefoon" placeholder="+31 6 12 34 56 78" />
               </div>
               <div class="form-group">
-                <label for="project">Soort project *</label>
+                <label for="project">Soort project</label>
                 <select id="project" name="project" required>
                   <option value="" disabled selected>Selecteer een type</option>
                   <option value="maatwerk">Maatwerk meubel</option>
                   <option value="restauratie">Restauratie</option>
                   <option value="interieuradvies">Interieuradvies</option>
                   <option value="bedrijfsinrichting">Bedrijfsinrichting</option>
-                  <option value="anders">Anders / niet zeker</option>
+                  <option value="anders">Anders of niet zeker</option>
                 </select>
               </div>
             </div>
-
             <div class="form-group">
-              <label for="bericht">Bericht *</label>
-              <textarea id="bericht" name="bericht" placeholder="Beschrijf uw wensen zo concreet mogelijk — afmetingen, materialen, ruimte, sfeer, budget... Geen idee waar te beginnen? Schrijf gewoon wat u voor ogen heeft." required></textarea>
+              <label for="bericht">Bericht</label>
+              <textarea id="bericht" name="bericht" placeholder="Beschrijf uw wensen zo concreet mogelijk: afmetingen, materialen, ruimte, sfeer, budget. Geen idee waar te beginnen? Schrijf gewoon wat u voor ogen heeft." required></textarea>
             </div>
-
-            <div class="form-group" style="display:flex; align-items:center; gap:12px; margin-bottom:0;">
-              <input type="checkbox" id="akkoord" name="akkoord" style="width:18px; height:18px; accent-color:var(--gold); flex-shrink:0;" required />
-              <label for="akkoord" style="font-size:0.82rem; font-weight:400; letter-spacing:0; text-transform:none; color:#555; cursor:pointer;">
+            <div class="form-group" style="display:flex; align-items:flex-start; gap:12px; margin-bottom:0;">
+              <input type="checkbox" id="akkoord" name="akkoord" style="width:17px; height:17px; margin-top:2px; accent-color:var(--gold); flex-shrink:0;" required />
+              <label for="akkoord" style="font-size:0.82rem; font-weight:400; letter-spacing:0; text-transform:none; color:#666; cursor:pointer;">
                 Ik ga akkoord met het gebruik van mijn gegevens voor de beantwoording van dit formulier. Edelhout deelt uw gegevens nooit met derden.
               </label>
             </div>
-
-            <button type="submit" class="btn btn-gold" style="width:100%; justify-content:center; margin-top:28px; padding:16px;">
+            <button type="submit" class="btn btn-gold" style="width:100%; justify-content:center; margin-top:28px; padding:16px 36px;">
               Verstuur bericht
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
             </button>
           </form>
         </div>
 
         <!-- INFO -->
-        <div class="contact-info fade-in fade-in-delay-2">
-          <span class="section-label">Contactgegevens</span>
-          <h3 style="font-family:'Cormorant Garamond',serif; font-size:1.8rem; margin-bottom:8px;">Edelhout</h3>
-          <p style="font-size:0.9rem; color:#777; margin-bottom:36px;">Meubelmakerij &amp; ambachtelijk houtwerk</p>
+        <div class="contact-side fade-in fade-in-delay-2">
+          <span class="eyebrow">Contactgegevens</span>
+          <h3 style="font-family:'Cormorant Garamond',serif; font-size:2rem; margin-bottom:6px;">Edelhout</h3>
+          <p style="font-size:0.88rem; color:#999; margin-bottom:36px;">Meubelmakerij en ambachtelijk houtwerk</p>
 
           <div class="contact-detail">
             <div class="contact-detail-icon">
@@ -132,7 +123,7 @@
             </div>
             <div class="contact-detail-text">
               <strong>Telefoon</strong>
-              <span><a href="tel:+31612345678" style="color:#555;">+31 (0)6 12 34 56 78</a></span>
+              <span><a href="tel:+31612345678" style="color:#666;">+31 (0)6 12 34 56 78</a></span>
             </div>
           </div>
 
@@ -142,7 +133,7 @@
             </div>
             <div class="contact-detail-text">
               <strong>E-mail</strong>
-              <span><a href="mailto:info@edelhout.nl" style="color:#555;">info@edelhout.nl</a></span>
+              <span><a href="mailto:info@edelhout.nl" style="color:#666;">info@edelhout.nl</a></span>
             </div>
           </div>
 
@@ -152,30 +143,22 @@
             </div>
             <div class="contact-detail-text">
               <strong>Openingstijden werkplaats</strong>
-              <span>
-                Ma – Vr: 08:00 – 17:30<br />
-                Zaterdag: 09:00 – 14:00 (op afspraak)<br />
-                Zondag: Gesloten
-              </span>
+              <span>Ma t/m vr: 08:00 – 17:30<br />Zaterdag: 09:00 – 14:00 (op afspraak)<br />Zondag: gesloten</span>
             </div>
           </div>
 
-          <!-- Map placeholder -->
           <div class="map-placeholder">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
-              <polygon points="3 11 22 2 13 21 11 13 3 11"/>
-            </svg>
-            <span>Google Maps — Ambachtslaan 12, Utrecht</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+            <span>Google Maps · Ambachtslaan 12, Utrecht</span>
           </div>
 
-          <!-- Social -->
           <div style="margin-top:32px;">
-            <p style="font-size:0.75rem; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:var(--charcoal); margin-bottom:16px;">Volg ons</p>
+            <p style="font-size:0.7rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--charcoal); margin-bottom:16px;">Volg ons</p>
             <div class="footer-social">
-              <a href="#" class="social-icon" aria-label="Instagram" style="border-color:rgba(28,28,28,0.2); color:#555;">
+              <a href="#" class="social-icon" aria-label="Instagram" style="border-color:rgba(28,28,28,0.2); color:#888;">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
               </a>
-              <a href="#" class="social-icon" aria-label="Facebook" style="border-color:rgba(28,28,28,0.2); color:#555;">
+              <a href="#" class="social-icon" aria-label="Facebook" style="border-color:rgba(28,28,28,0.2); color:#888;">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
               </a>
             </div>
@@ -187,80 +170,43 @@
   </section>
 
   <!-- PROMISE STRIP -->
-  <section class="section section--dark" style="padding:60px 0;">
-    <div class="container">
-      <div class="grid-3 text-center">
-        <div class="fade-in">
-          <div style="color:var(--gold); margin-bottom:12px;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:32px;height:32px;display:inline-block;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          </div>
-          <h4 style="color:var(--white); font-size:1.1rem; margin-bottom:8px;">Reactie binnen 1 werkdag</h4>
-          <p style="font-size:0.85rem;">Kick leest elk bericht persoonlijk en reageert snel en concreet.</p>
-        </div>
-        <div class="fade-in fade-in-delay-2">
-          <div style="color:var(--gold); margin-bottom:12px;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:32px;height:32px;display:inline-block;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <h4 style="color:var(--white); font-size:1.1rem; margin-bottom:8px;">Vrijblijvend gesprek</h4>
-          <p style="font-size:0.85rem;">Een eerste gesprek of werkplaatsbezoek is altijd zonder verplichtingen.</p>
-        </div>
-        <div class="fade-in fade-in-delay-4">
-          <div style="color:var(--gold); margin-bottom:12px;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:32px;height:32px;display:inline-block;"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
-          </div>
-          <h4 style="color:var(--white); font-size:1.1rem; margin-bottom:8px;">Persoonlijk &amp; betrokken</h4>
-          <p style="font-size:0.85rem;">U spreekt altijd rechtstreeks met Kick — van eerste contact tot oplevering.</p>
-        </div>
+  <section class="section--white" style="padding:0;">
+    <div class="craft-strip">
+      <div class="craft-item fade-in">
+        <span class="craft-num" style="font-size:2rem;">24u</span>
+        <h4>Reactie binnen één werkdag</h4>
+        <p>Kick leest elk bericht persoonlijk en reageert snel en concreet op uw vraag.</p>
+      </div>
+      <div class="craft-item fade-in fade-in-delay-2">
+        <span class="craft-num" style="font-size:2rem;">0</span>
+        <h4>Vrijblijvend gesprek</h4>
+        <p>Een eerste gesprek of werkplaatsbezoek is altijd zonder verplichtingen of kosten.</p>
+      </div>
+      <div class="craft-item fade-in fade-in-delay-4">
+        <span class="craft-num" style="font-size:2rem; font-style:italic;">Kick</span>
+        <h4>Persoonlijk en betrokken</h4>
+        <p>U spreekt altijd rechtstreeks met Kick, van eerste contact tot en met de oplevering.</p>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">
         <div class="footer-brand">
           <a href="index.html" class="footer-logo">Edelhout</a>
           <p>Ambachtelijke meubelmakerij voor wie kiest voor kwaliteit, karakter en een meubel dat een verhaal vertelt.</p>
-          <div class="footer-social" style="margin-top:24px;">
-            <a href="#" class="social-icon" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
-            </a>
-            <a href="#" class="social-icon" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
-            </a>
+          <div class="footer-social">
+            <a href="#" class="social-icon" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg></a>
+            <a href="#" class="social-icon" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
           </div>
         </div>
-        <div class="footer-col">
-          <h5>Navigatie</h5>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="over-ons.html">Over Ons</a></li>
-            <li><a href="diensten.html">Diensten</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h5>Diensten</h5>
-          <ul>
-            <li><a href="diensten.html">Maatwerk meubels</a></li>
-            <li><a href="diensten.html">Restauratie</a></li>
-            <li><a href="diensten.html">Interieuradvies</a></li>
-            <li><a href="diensten.html">Bedrijfsinrichting</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h5>Contact</h5>
-          <ul>
-            <li><a href="mailto:info@edelhout.nl">info@edelhout.nl</a></li>
-            <li><a href="tel:+31612345678">+31 (0)6 12 34 56 78</a></li>
-            <li><a href="contact.html">Stuur een bericht</a></li>
-          </ul>
-        </div>
+        <div class="footer-col"><h5>Navigatie</h5><ul><li><a href="index.html">Home</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="over-ons.html">Over Ons</a></li><li><a href="diensten.html">Diensten</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h5>Diensten</h5><ul><li><a href="diensten.html">Maatwerk meubels</a></li><li><a href="diensten.html">Restauratie</a></li><li><a href="diensten.html">Interieuradvies</a></li><li><a href="diensten.html">Bedrijfsinrichting</a></li></ul></div>
+        <div class="footer-col"><h5>Contact</h5><ul><li><a href="mailto:info@edelhout.nl">info@edelhout.nl</a></li><li><a href="tel:+31612345678">+31 (0)6 12 34 56 78</a></li><li><a href="contact.html">Stuur een bericht</a></li></ul></div>
       </div>
       <div class="footer-bottom">
-        <span>© 2024 Edelhout – Kick de Meester. Alle rechten voorbehouden.</span>
+        <span>© 2024 Edelhout · Kick de Meester. Alle rechten voorbehouden.</span>
         <span>Met trots gemaakt in Nederland</span>
       </div>
     </div>
