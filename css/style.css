@@ -525,6 +525,22 @@ p { font-size: 0.95rem; color: #555; line-height: 1.8; }
   letter-spacing: 0.06em;
 }
 
+.hero-bg-text {
+  position: absolute;
+  bottom: 60px;
+  right: -24px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(8rem, 18vw, 17rem);
+  font-weight: 700;
+  font-style: italic;
+  color: rgba(201,168,76,0.045);
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
+  z-index: 0;
+}
+
 /* Craft strip (USP) */
 .craft-strip {
   display: grid;
