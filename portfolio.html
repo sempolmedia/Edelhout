@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio – Edelhout Meubelmakerij</title>
+  <meta name="description" content="Bekijk het portfolio van Edelhout — handgemaakte tafels, kasten, stoelen en maatwerk meubels door vakman Kick." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    @keyframes fadeInCard {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav nav--solid">
+    <a href="index.html" class="nav-logo">Edelhout</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html" class="active">Portfolio</a></li>
+      <li><a href="over-ons.html">Over Ons</a></li>
+      <li><a href="diensten.html">Diensten</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Menu openen">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <nav class="nav-mobile">
+    <a href="index.html">Home</a>
+    <a href="portfolio.html" class="active">Portfolio</a>
+    <a href="over-ons.html">Over Ons</a>
+    <a href="diensten.html">Diensten</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label" style="color:var(--gold);">Ons werk</span>
+      <h1>Ons Portfolio</h1>
+      <div class="gold-divider"></div>
+      <p class="lead" style="color:rgba(255,255,255,0.6); margin:0 auto;">
+        Elk stuk in dit portfolio begon als een gesprek. Hier ziet u wat er mogelijk is als vakmanschap en uw wensen samenkomen.
+      </p>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO GRID -->
+  <section class="section section--cream">
+    <div class="container">
+
+      <!-- Filter bar -->
+      <div class="filter-bar fade-in">
+        <button class="filter-btn active" data-filter="all">Alles</button>
+        <button class="filter-btn" data-filter="tafels">Tafels</button>
+        <button class="filter-btn" data-filter="kasten">Kasten</button>
+        <button class="filter-btn" data-filter="stoelen">Stoelen</button>
+        <button class="filter-btn" data-filter="maatwerk">Maatwerk</button>
+      </div>
+
+      <!-- Grid -->
+      <div class="portfolio-grid">
+
+        <!-- 1 -->
+        <div class="port-card fade-in" data-cat="tafels">
+          <div class="port-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              Portfolio afbeelding
+            </div>
+            <div class="port-card-hover">
+              <span style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:#fff;font-style:italic;">Eettafel Eik</span>
+              <a href="#" class="btn btn-outline-light" style="font-size:0.72rem;padding:10px 22px;">Bekijk project</a>
+            </div>
+          </div>
+          <div class="port-card-info">
+            <div class="cat">Tafels</div>
+            <h4>Massieve eettafel — Europese eik</h4>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="port-card fade-in fade-in-delay-1" data-cat="kasten">
+          <div class="port-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              Portfolio afbeelding
+            </div>
+            <div class="port-card-hover">
+              <span style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:#fff;font-style:italic;">Boekenkast Noten</span>
+              <a href="#" class="btn btn-outline-light" style="font-size:0.72rem;padding:10px 22px;">Bekijk project</a>
+            </div>
+          </div>
+          <div class="port-card-info">
+            <div class="cat">Kasten</div>
+            <h4>Vrijstaande boekenkast — Amerikaans noten</h4>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="port-card fade-in fade-in-delay-2" data-cat="stoelen">
+          <div class="port-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              Portfolio afbeelding
+            </div>
+            <div class="port-card-hover">
+              <span style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:#fff;font-style:italic;">Eetkamerstoelen</span>
+              <a href="#" class="btn btn-outline-light" style="font-size:0.72rem;padding:10px 22px;">Bekijk project</a>
+            </div>
+          </div>
+          <div class="port-card-info">
+            <div class="cat">Stoelen</div>
+            <h4>Set van 6 eetkamerstoelen — gebogen beukenhout</h4>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="port-card fade-in" data-cat="maatwerk">
+          <div class="port-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              Portfolio afbeelding
+            </div>
+            <div class="port-card-hover">
+              <span style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:#fff;font-style:italic;">Hoekbank Maatwerk</span>
+              <a href="#" class="btn btn-outline-light" style="font-size:0.72rem;padding:10px 22px;">Bekijk project</a>
+            </div>
+          </div>
+          <div class="port-card-info">
+            <div class="cat">Maatwerk</div>
+            <h4>Ingebouwde hoekbank met opbergruimte — villa Utrecht</h4>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="port-card fade-in fade-in-delay-1" data-cat="tafels">
+          <div class="port-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              Portfolio afbeelding
+            </div>
+            <div class="port-card-hover">
+              <span style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:#fff;font-style:italic;">Bureautafel Walnoot</span>
+              <a href="#" class="btn btn-outline-light" style="font-size:0.72rem;padding:10px 22px;">Bekijk project</a>
+            </div>
+          </div>
+          <div class="port-card-info">
+            <div class="cat">Tafels</div>
+            <h4>Thuiskantoor bureau — walnoot met stalen frame</h4>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="port-card fade-in fade-in-delay-2" data-cat="kasten">
+          <div class="port-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              Portfolio afbeelding
+            </div>
+            <div class="port-card-hover">
+              <span style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:#fff;font-style:italic;">Keukenkast Op Maat</span>
+              <a href="#" class="btn btn-outline-light" style="font-size:0.72rem;padding:10px 22px;">Bekijk project</a>
+            </div>
+          </div>
+          <div class="port-card-info">
+            <div class="cat">Kasten</div>
+            <h4>Keukeneiland met opbergruimte — eik met marmer blad</h4>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="port-card fade-in" data-cat="stoelen">
+          <div class="port-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              Portfolio afbeelding
+            </div>
+            <div class="port-card-hover">
+              <span style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:#fff;font-style:italic;">Schommelstoel</span>
+              <a href="#" class="btn btn-outline-light" style="font-size:0.72rem;padding:10px 22px;">Bekijk project</a>
+            </div>
+          </div>
+          <div class="port-card-info">
+            <div class="cat">Stoelen</div>
+            <h4>Handgesneden schommelstoel — kersenhout</h4>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="port-card fade-in fade-in-delay-1" data-cat="maatwerk">
+          <div class="port-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              Portfolio afbeelding
+            </div>
+            <div class="port-card-hover">
+              <span style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:#fff;font-style:italic;">Receptiebalie</span>
+              <a href="#" class="btn btn-outline-light" style="font-size:0.72rem;padding:10px 22px;">Bekijk project</a>
+            </div>
+          </div>
+          <div class="port-card-info">
+            <div class="cat">Maatwerk</div>
+            <h4>Receptiebalie voor advocatenkantoor — Den Haag</h4>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="port-card fade-in fade-in-delay-2" data-cat="tafels">
+          <div class="port-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              Portfolio afbeelding
+            </div>
+            <div class="port-card-hover">
+              <span style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:#fff;font-style:italic;">Salontafel Live Edge</span>
+              <a href="#" class="btn btn-outline-light" style="font-size:0.72rem;padding:10px 22px;">Bekijk project</a>
+            </div>
+          </div>
+          <div class="port-card-info">
+            <div class="cat">Tafels</div>
+            <h4>Live-edge salontafel — gevlekte acacia</h4>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container fade-in">
+      <span class="section-label" style="color:rgba(28,28,28,0.5);">Uw project</span>
+      <h2>Ziet u iets wat u inspireert?</h2>
+      <p>Vertel Kick uw idee en ontvang een vrijblijvend voorstel op maat.</p>
+      <a href="contact.html" class="btn btn-gold">
+        Neem contact op
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">Edelhout</a>
+          <p>Ambachtelijke meubelmakerij voor wie kiest voor kwaliteit, karakter en een meubel dat een verhaal vertelt.</p>
+          <div class="footer-social" style="margin-top:24px;">
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Navigatie</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="over-ons.html">Over Ons</a></li>
+            <li><a href="diensten.html">Diensten</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Diensten</h5>
+          <ul>
+            <li><a href="diensten.html">Maatwerk meubels</a></li>
+            <li><a href="diensten.html">Restauratie</a></li>
+            <li><a href="diensten.html">Interieuradvies</a></li>
+            <li><a href="diensten.html">Bedrijfsinrichting</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="mailto:info@edelhout.nl">info@edelhout.nl</a></li>
+            <li><a href="tel:+31612345678">+31 (0)6 12 34 56 78</a></li>
+            <li><a href="contact.html">Stuur een bericht</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024 Edelhout – Kick de Meester. Alle rechten voorbehouden.</span>
+        <span>Met trots gemaakt in Nederland</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
